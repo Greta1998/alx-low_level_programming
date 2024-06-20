@@ -1,0 +1,4 @@
+#!bin/bash
+:"${CFILE:?Error: CFILE variable is not set}"
+gcc -E "$CFILE" -o c
+
