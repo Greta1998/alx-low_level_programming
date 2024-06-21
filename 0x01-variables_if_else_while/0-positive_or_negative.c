@@ -7,9 +7,9 @@
  *
  * Author: Greta
  *
- * Description: This program implements else if statements on a random number and outputs if the number is zero, positive or negative.
+ * Description: if statements on a random number
  *
- * Return: Always 0 (Success)
+ * Return: always 0  (Success)
  *
  */
 int main(void)
