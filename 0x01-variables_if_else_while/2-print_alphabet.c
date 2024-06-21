@@ -1,6 +1,7 @@
 #include <stdio.h>
+
 /**
- * main-Entry point of the program
+ * main- Entry point of the program
  *
  * Author: Greta
  *
