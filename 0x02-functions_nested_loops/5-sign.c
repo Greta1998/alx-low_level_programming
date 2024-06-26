@@ -2,13 +2,13 @@
 
 /**
  * print_sign(int n)- prints the sign of the number
- * @n- the character to be checked
+ * @n- the int to be checked
  *
  * Return: 1 if n > 0, 0 if n == 0, -1 if n < 0
  */
 int print_sign(int n)
 {
-	if ( n > 0)
+	if (n > 0)
 	{
 		_putchar('+');
 		return (1);
@@ -23,5 +23,4 @@ int print_sign(int n)
 		_putchar('-');
 		return (-1);
 	}
-}
-		
+}		
