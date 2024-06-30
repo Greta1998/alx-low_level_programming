@@ -9,7 +9,7 @@ void print_to_98(int n)
 {
 	int i, j;
 
-	if (n <= 98)
+	if (n > 0 && n <= 98)
 	{
 		for (i = n; i <= 98; i++)
 		{
@@ -40,6 +40,23 @@ void print_to_98(int n)
 			else if (j == 98)
 			{
 				_putchar(j + '0');
+				_putchar('\n');
+			}
+		}
+	}
+	else if (n <= 0)
+	{
+		for (i = 1; i >= 98; i++)
+		{
+			if (i != 98)
+			{
+				_putchar(i + '0');
+				_putchar(',');
+				_putchar(' ');
+			}
+			else if (i == 98)
+			{
+				_putchar(i + '0');
 				_putchar('\n');
 			}
 		}
