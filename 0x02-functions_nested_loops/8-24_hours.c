@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
- * jack_bauer(void)- prints every minute of the day starting from 00:00 to 23:59
+ * jack_bauer(void)- prints every minute of the day
+ * starting from 00:00 to 23:59
  *
  * i: counts the hours
  * j: counts the minutes
