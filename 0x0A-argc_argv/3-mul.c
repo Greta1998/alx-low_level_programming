@@ -19,11 +19,11 @@ int main(int argc, char *argv[])
 	{
 		prod = num1 * num2;
 		printf("%d\n", prod);
-		return (prod);
+		return (0);
 	}
 	else
 	{
-		printf("Error");
+		printf("Error\n");
 		return (1);
 	}
 }
