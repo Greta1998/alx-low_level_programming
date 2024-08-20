@@ -9,7 +9,7 @@
  * or write fails or returns an unexpected number of bytes, return 0.
  * Otherwise, return the actual number of letters read and printed.
  */
-ssize_t read_textfile(cost char *filename, size_t letters)
+ssize_t read_textfile(const char *filename, size_t letters)
 {
 	char *buffer = NULL;
 	ssize_t b_read;
@@ -18,7 +18,7 @@ ssize_t read_textfile(cost char *filename, size_t letters)
 
 	if(!(filename && letters))
 		return (0);
-	fd = open(filename, 0_RDONLY);
+	fd = open(filename, O_RDONLY);
 	if (fd == -1)
 		return (0);
 
