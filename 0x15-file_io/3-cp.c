@@ -72,7 +72,7 @@ int main(int argc, const char *argv[])
 		dprintf(STDERR_FILENO, "Usage: cp file-from file_to\n");
 		exit(97);
 	}
-	fd_in = open(argv[1], 0_RDONLY);
+	fd_in = open(argv[1], O_RDONLY);
 	if (fd_in < 0)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
