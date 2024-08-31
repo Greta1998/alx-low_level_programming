@@ -45,7 +45,7 @@ ssize_t _read(const char *filename, int fd, char *buf, size_t count)
  *
  * Return: The number of bytes written, or -1 upon failure
  */
-ssize_t _write(const chare *filename, int fd, const char *buf, size_t count)
+ssize_t _write(const char *filename, int fd, const char *buf, size_t count)
 {
 	ssize_t bytes_written = write(fd, buf, count);
 
@@ -69,7 +69,7 @@ int main(int argc, const char *argv[])
 
 	if (argc != 3)
 	{
-		dprintf(STDERR_FILENP, "Usage: cp file-from file_to\n");
+		dprintf(STDERR_FILENO, "Usage: cp file-from file_to\n");
 		exit(97);
 	}
 	fd_in = open(argv[1], 0_RDONLY);
